@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam</title>
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+  
+    <aside class="d-flex flex-column  justify-content-between overflow-hidden  vh-100 position-fixed z-3 mt-0 bg-black " >
+        <ul class="p-4 ">
+            <li class="list-unstyled pb-4 " onclick="nowPlaying()">Now playing</li>
+            <li  class="list-unstyled pb-4 " onclick="popular()">Popular</li>
+            <li  class="list-unstyled pb-4 " onclick="topRated()">Top Rated</li>
+            <li  class="list-unstyled pb-4 " onclick="trending()">Trending</li>
+            <li  class="list-unstyled pb-4 " onclick="upComing()">Upcoming</li>
+            <li class="list-unstyled pb-4"><a class="text-decoration-none contact2"  href="#">Contact Us</a></li>
+        </ul>
+        <div class="text-white p-4 ">
+            <i class="fa-brands fa-facebook text-color pe-2"></i>
+            <i class="fa-brands fa-twitter text-color pe-2"></i>
+            <i class="fa-solid fa-globe text-color mb-3"></i>
+            <p class="text-color fw-normal">Created by <a href="#" class="color text-decoration-none">Rahma Hassan </a> Copyright © 2024 All Rights Reserved. </p>
+        </div>
+    </aside>
+    <div class="vh-100 position-fixed z-3 p-2 mt-0 bg-white nav d-flex justify-content-between flex-column align-items-center">
+        <img src="./New folder/logo.png" class="w-75">
+        <i class="fa-solid fa-xmark close fs-3"></i>
+        <i class="fa-solid fa-bars fs-3  open"></i>
+        <div class="d-flex flex-column gap-2">
+            <i class="fa-solid fa-globe" ></i>
+            <i class="fa-solid fa-share-nodes"></i>
+           </div>
+
+    </div>
+  
+   <section class="p-4">
+    <div class="container">
+        <form>
+            <input type="search" oninput="search()" placeholder="search" class="searchInput text-white fs-4 form-control w-50 mx-auto "/>
+        </form>
+    </div>
+   </section>
+
+   
+   <section class="m-4">
+    <div class="container">
+        <div class="row movieContainer g-3 ">
+            
+        </div>
+    </div>
+   </section>
+   <section class="contact m-5">
+    <div class="container">
+        <h2 class="text-white">Contact US</h2>
+        <form>
+        <div class="row g-3">
+            <div class="col-6">
+                <input type="text" oninput="validation(nameInput,nameRegix)" class="form-control name" placeholder="Enter Your Name"/>
+         </div>
+         <div class="col-6">
+            <input type="email" class="form-control email" oninput="validation(emailInput,emailRegix)" placeholder="Enter Your Email"/>
+
+        </div>
+            <div class="col-6">
+                <input type="tel" class="form-control phone" oninput="validation(phoneInput,phoneRegix)" placeholder="Enter Your Phone"/>
+            </div>
+            <div class="col-6">
+                <input type="tel" class="form-control age" oninput="validation(ageInput,ageRegix)" placeholder="Enter Your Age"/>
+        </div>
+        <div class="col-6">
+            <input type="password" oninput="validation(passwordInput,passwordRegix)" class="password form-control" placeholder="Enter Your Password"/>
+    </div>
+    <div class="col-6">
+            <input type="password" class="form-control" placeholder="ReEnter password"/>
+    </div>
+           
+         
+        </div>
+    </form>
+    </div>
+   </section>
+    
+
+
+
+
+
+  <script src="./js/jquery-3.7.1.min.js" ></script> 
+  <script src="./js/bootstrap.bundle.min.js" ></script> 
+  <script src="./js/index.js" ></script> 
+</body>
+</html>
